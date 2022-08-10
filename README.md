@@ -1,2 +1,2 @@
 # patches
-.bashrc patch for color support: ```curl -L https://github.com/honklol/patches/raw/main/bashrc.patch | patch -u /root/.bashrc```
+.bashrc patch for color support: ```curl patches.scripts.honk.one/scripts/bashrc.sh | bash```
