@@ -14,4 +14,4 @@ cline >&3; echo "Installing patch and curl" >&3
 apt install patch curl -y
 cline >&3; echo "Patching .bashrc" >&3
 curl -L https://github.com/honklol/patches/raw/main/patches/bashrc.patch | patch -u /root/.bashrc
-cline >&3; echo "Patched .bashrc - reset your session to apply changes." >&3
+cline >&3; echo "Patched .bashrc - reset your session to apply changes." >&3; echo "" >&3
