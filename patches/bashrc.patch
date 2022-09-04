@@ -1,12 +1,14 @@
---- /root/.bashrc.old   2022-08-10 13:19:10.603779609 +0000
-+++ /root/.bashrc       2022-08-10 13:22:19.275389603 +0000
-@@ -49,7 +49,7 @@
+--- /root/.bashrc.old   2022-09-04 20:22:43.037019995 +0000
++++ /root/.bashrc       2022-09-04 20:22:28.629003082 +0000
+@@ -49,8 +49,9 @@
      fi
  fi
  
 -if [ "$color_prompt" = yes ]; then
+-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 +if [ "$color_prompt" = "$color_prompt" ]; then
--     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-+     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;36m\]\h \[\033[01;33m\]\w \[\033[01;35m\]\$ \[\033[00m\]'
++    #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
++    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;31m\]\u\[\033[01;33m\]@\[\033[01;36m\]\h \[\033[01;33m\]\w \[\033[01;35m\]\$ \[\033[00m\]'
  else
      PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+ fi
